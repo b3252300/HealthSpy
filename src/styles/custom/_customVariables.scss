@@ -1,0 +1,69 @@
+
+$btn_danger:#fef2f2;
+$yellow:#fef9e8;
+$green:#f0fdf3;
+$spycolor:#008CD6;
+$spyGreencolor: #8FC31F;
+$main-color:#07BF5C;
+
+$title-font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei", Microsoft YaHei, PingFang, STHeiti, sans-serif, serif, Arial;
+
+
+//margin-right 1~5
+$base-margin: 0.5rem;
+@for $i from 1 through 5 {
+  .mr-#{$i} {
+    margin-right: $i * $base-margin;
+    //margin-right:0.5rem ;
+  }
+}
+
+// margin-left 1~5
+@for $i from 1 through 5 {
+    .ml-#{$i} {
+      margin-left: $i * $base-margin;
+      //margin-left:0.5rem ;
+    }
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    src: url('@/assets/fonts/NotoSansTC-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    src: url('@/assets/fonts/NotoSansTC-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    src: url('@/assets/fonts/NotoSansTC-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    src: url('@/assets/fonts/NotoSansTC-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('@/assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('@/assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+

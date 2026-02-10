@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <PackageJsonName Condition="$(PackageJsonName) == ''">landseed.healthmembervuewebapp</PackageJsonName>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.0.0</PackageJsonVersion>
+    <PackageJsonPrivate Condition="$(PackageJsonPrivate) == ''">true</PackageJsonPrivate>
+    <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
+    <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">cross-env --max_old_space_size=4096 vite</PackageJsonScriptsDev>
+    <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">rimraf dist &amp;&amp; cross-env vite build</PackageJsonScriptsBuild>
+    <PackageJsonScriptsBuildEhealthalpha Condition="$(PackageJsonScriptsBuildEhealthalpha) == ''">rimraf dist &amp;&amp; cross-env vite build --mode ehealthalpha</PackageJsonScriptsBuildEhealthalpha>
+    <PackageJsonScriptsBuildStaging Condition="$(PackageJsonScriptsBuildStaging) == ''">rimraf dist &amp;&amp; cross-env vite build --mode staging</PackageJsonScriptsBuildStaging>
+    <PackageJsonScriptsBuildHktdm1alpha Condition="$(PackageJsonScriptsBuildHktdm1alpha) == ''">rimraf dist &amp;&amp; cross-env vite build --mode hktdm1alpha</PackageJsonScriptsBuildHktdm1alpha>
+    <PackageJsonScriptsReport Condition="$(PackageJsonScriptsReport) == ''">rimraf dist &amp;&amp; cross-env vite build</PackageJsonScriptsReport>
+    <PackageJsonScriptsVis Condition="$(PackageJsonScriptsVis) == ''">set vis=true &amp;&amp; vite build</PackageJsonScriptsVis>
+    <PackageJsonScriptsLintFix Condition="$(PackageJsonScriptsLintFix) == ''"></PackageJsonScriptsLintFix>
+    <PackageJsonScriptsLintPrettier Condition="$(PackageJsonScriptsLintPrettier) == ''"></PackageJsonScriptsLintPrettier>
+    <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''"></PackageJsonScriptsLint>
+    <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
+    <PackageJsonScriptsPrepare Condition="$(PackageJsonScriptsPrepare) == ''">husky install</PackageJsonScriptsPrepare>
+    <PackageJsonDependenciesVitejsPluginLegacy Condition="$(PackageJsonDependenciesVitejsPluginLegacy) == ''">^6.0.1</PackageJsonDependenciesVitejsPluginLegacy>
+    <PackageJsonDependenciesVitejsPluginVueJsx Condition="$(PackageJsonDependenciesVitejsPluginVueJsx) == ''">^4.1.1</PackageJsonDependenciesVitejsPluginVueJsx>
+    <PackageJsonDependenciesAntDesignVue Condition="$(PackageJsonDependenciesAntDesignVue) == ''">^4.2.6</PackageJsonDependenciesAntDesignVue>
+    <PackageJsonDependenciesApexcharts Condition="$(PackageJsonDependenciesApexcharts) == ''">^4.4.0</PackageJsonDependenciesApexcharts>
+    <PackageJsonDependenciesAxios Condition="$(PackageJsonDependenciesAxios) == ''">^1.7.9</PackageJsonDependenciesAxios>
+    <PackageJsonDependenciesBootstrap Condition="$(PackageJsonDependenciesBootstrap) == ''">^5.3.3</PackageJsonDependenciesBootstrap>
+    <PackageJsonDependenciesChartJs Condition="$(PackageJsonDependenciesChartJs) == ''">^4.4.8</PackageJsonDependenciesChartJs>
+    <PackageJsonDependenciesClipboard Condition="$(PackageJsonDependenciesClipboard) == ''">^2.0.11</PackageJsonDependenciesClipboard>
+    <PackageJsonDependenciesCrossEnv Condition="$(PackageJsonDependenciesCrossEnv) == ''">^7.0.3</PackageJsonDependenciesCrossEnv>
+    <PackageJsonDependenciesEncryptStorage Condition="$(PackageJsonDependenciesEncryptStorage) == ''">^2.14.6</PackageJsonDependenciesEncryptStorage>
+    <PackageJsonDependenciesHusky Condition="$(PackageJsonDependenciesHusky) == ''">^9.1.7</PackageJsonDependenciesHusky>
+    <PackageJsonDependenciesJsCookie Condition="$(PackageJsonDependenciesJsCookie) == ''">^3.0.5</PackageJsonDependenciesJsCookie>
+    <PackageJsonDependenciesMoment Condition="$(PackageJsonDependenciesMoment) == ''">^2.30.1</PackageJsonDependenciesMoment>
+    <PackageJsonDependenciesPinia Condition="$(PackageJsonDependenciesPinia) == ''">^2.3.1</PackageJsonDependenciesPinia>
+    <PackageJsonDependenciesQrcodeVue Condition="$(PackageJsonDependenciesQrcodeVue) == ''">^3.6.0</PackageJsonDependenciesQrcodeVue>
+    <PackageJsonDependenciesRimraf Condition="$(PackageJsonDependenciesRimraf) == ''">^6.0.1</PackageJsonDependenciesRimraf>
+    <PackageJsonDependenciesRollupPluginVisualizer Condition="$(PackageJsonDependenciesRollupPluginVisualizer) == ''">^5.14.0</PackageJsonDependenciesRollupPluginVisualizer>
+    <PackageJsonDependenciesSass Condition="$(PackageJsonDependenciesSass) == ''">^1.84.0</PackageJsonDependenciesSass>
+    <PackageJsonDependenciesUnpluginVueComponents Condition="$(PackageJsonDependenciesUnpluginVueComponents) == ''">^28.0.0</PackageJsonDependenciesUnpluginVueComponents>
+    <PackageJsonDependenciesUnpluginVueDefineOptions Condition="$(PackageJsonDependenciesUnpluginVueDefineOptions) == ''">^1.5.5</PackageJsonDependenciesUnpluginVueDefineOptions>
+    <PackageJsonDependenciesVitePluginEslint Condition="$(PackageJsonDependenciesVitePluginEslint) == ''">^1.8.1</PackageJsonDependenciesVitePluginEslint>
+    <PackageJsonDependenciesVitePluginMock Condition="$(PackageJsonDependenciesVitePluginMock) == ''">^3.0.2</PackageJsonDependenciesVitePluginMock>
+    <PackageJsonDependenciesVue Condition="$(PackageJsonDependenciesVue) == ''">^3.5.13</PackageJsonDependenciesVue>
+    <PackageJsonDependenciesVueRouter Condition="$(PackageJsonDependenciesVueRouter) == ''">^4.5.0</PackageJsonDependenciesVueRouter>
+    <PackageJsonDependenciesVue3Apexcharts Condition="$(PackageJsonDependenciesVue3Apexcharts) == ''">^1.8.0</PackageJsonDependenciesVue3Apexcharts>
+    <PackageJsonDependenciesVue3Lottie Condition="$(PackageJsonDependenciesVue3Lottie) == ''">^3.3.1</PackageJsonDependenciesVue3Lottie>
+    <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^9.18.0</PackageJsonDevdependenciesEslintJs>
+    <PackageJsonDevdependenciesVitejsPluginVue Condition="$(PackageJsonDevdependenciesVitejsPluginVue) == ''">^5.2.1</PackageJsonDevdependenciesVitejsPluginVue>
+    <PackageJsonDevdependenciesEslint Condition="$(PackageJsonDevdependenciesEslint) == ''">^9.18.0</PackageJsonDevdependenciesEslint>
+    <PackageJsonDevdependenciesEslintPluginVue Condition="$(PackageJsonDevdependenciesEslintPluginVue) == ''">^9.32.0</PackageJsonDevdependenciesEslintPluginVue>
+    <PackageJsonDevdependenciesSassEmbedded Condition="$(PackageJsonDevdependenciesSassEmbedded) == ''">^1.83.4</PackageJsonDevdependenciesSassEmbedded>
+    <PackageJsonDevdependenciesVite Condition="$(PackageJsonDevdependenciesVite) == ''">^6.0.11</PackageJsonDevdependenciesVite>
+    <PackageJsonDevdependenciesVitePluginVueDevtools Condition="$(PackageJsonDevdependenciesVitePluginVueDevtools) == ''">^7.7.0</PackageJsonDevdependenciesVitePluginVueDevtools>
+  </PropertyGroup>
+</Project>

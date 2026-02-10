@@ -1,0 +1,294 @@
+//自訂變數
+
+@use 'customVariables.scss';
+
+//原站的css
+@import '../original/vendor/bootstrap-icons/font/bootstrap-icons.css';
+@import '../original/vendor/hs-mega-menu/dist/hs-mega-menu.min.css';
+@import '../original/css/calendar.css';
+@import '../original/css/theme.min.css';
+
+
+
+
+
+html{
+  font-size: 16px;//根元素字級
+}
+
+body{
+  color: #2D2D2D;
+
+}
+.btn {
+    --bs-btn-font-size: 0.875rem;
+}
+
+.btn-spy {
+    background: $spycolor;
+    color: #fff;
+    border-radius: 4px;
+    width: 100%;
+    --bs-btn-padding-y: 0.35rem;
+    font-family: 'Noto Sans TC';
+    font-weight:700;
+
+    &:hover, &:focus {
+        color: #fff;
+        background-color: #0186CD;
+        border-color: #0186CD;
+    }
+
+    &:active {
+        color: #fff;
+        background-color: #0081C5;
+        border-color: #0081C5;
+    }
+}
+
+.btn-green {
+    background: $spyGreencolor;
+    color: #fff;
+    border-radius: 4px;
+    width: 100%;
+    --bs-btn-padding-y: 0.35rem;
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+
+    &:focus, &:hover {
+        background: #88BA1D;
+        color: #fff;
+    }
+
+    &:active {
+        background: #84B41D;
+        color: #fff;
+    }
+}
+
+.btn-outline-primaryblue {
+    border: solid #008CD6 thin;
+    color: #008CD6;
+    font-weight: 500;
+    width: 100%;
+    height: 36px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: var(--bs-btn-font-size);
+    font-family: 'Noto Sans TC';
+    border-radius: 5px;
+
+    &:hover, &:focus {
+        background: #008CD6;
+        color: #ffffff !important;
+    }
+
+    &:active {
+        background: #0186CD;
+        color: #ffffff !important;
+    }
+}
+
+.btn_submit {
+    font-size: var(--bs-btn-font-size);
+    padding: 11px;
+    background: #8FC31F;
+    color: #fff;
+    font-family: 'Noto Sans TC';
+    border: none;
+
+
+    &:focus, &:hover {
+        background: #88BA1D;
+        color: #fff;
+    }
+
+    &:active {
+        background: #84B41D;
+        color: #fff;
+    }
+}
+
+
+.btn.btn-outline-secondary {
+    &:hover, &:focus, &:active {
+        background-color: #ddd;
+        border-color: #ddd;
+    }
+}
+.text{
+  &-left{
+    text-align: left;
+  }
+  &-center{
+    text-align: center;
+  }
+  &-right{
+      text-align: right;
+  }
+}
+
+.d-flex{
+  display: flex;
+
+}
+.align-items-center{
+  align-items: center;
+}
+
+
+.justify-content{
+  &-between{
+    justify-content: space-between;
+  }
+}
+
+
+.w-100{
+  width: 100%;
+}
+
+.btn-soft-info{
+  font-weight: bolder;
+  color: #5E53D3;
+  background-color: #E2DEFA;
+
+}
+
+.alert-soft-success{
+  color: #50B07C;
+  background-color:  #E2F9EF;
+}
+.form-select {
+  padding: 0.75rem 1.5rem 0.75rem 1.8125rem;
+}
+form.form_row{
+  [class^="col-"]{
+    --bs-gutter-x: 0.5rem;
+  }
+
+}
+.form_card{
+  padding: 1rem;
+}
+label.form-label ~ div {
+  margin-bottom: 0.5rem;
+}
+
+.nav-link{
+  cursor: pointer;
+}
+.btn-check:focus + .btn-soft-info, .btn-soft-info:focus, .btn-submit_containersoft-info:hover {
+    color: #5E53D3;
+    background-color: #e2defa;
+}
+
+.btn-primary {
+  --bs-btn-hover-bg: #006eeb;
+}
+.noData_container{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+
+
+
+
+.offcanvas-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+//背景
+
+body:has(.bg_HealthSurvey_color) {
+    background: #EBF8FF
+}
+
+body:has(.bg_DiseaseRisk_color) {
+    background: #EDFEDE;
+
+}
+
+//底部bar
+.submit_container {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    align-items: center;
+
+    .btn_submit {
+        width: 7.125rem;
+        height: 60px;
+        border-radius: 0;
+    }
+}
+
+.progress_class {
+    max-width: 150px;
+    height: 8px;
+    // 外部圆角
+    overflow: hidden;
+    border-radius: 8px 8px 8px 8px;
+    /*设置iOS下清除灰色背景*/
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+// 进度条的进度样式
+.progress_class::-webkit-progress-value {
+    background: linear-gradient(90deg, #D1E9FF 0%, #057AFF 100%);
+    border-radius: 8px; // 内部的圆角
+}
+
+// 进度条未达到部分
+.progress_class::-webkit-progress-bar {
+    background-color: #E3E7EA; // 进度条未进度 部分
+}
+
+.bar_content {
+    &-text {
+        color: #2D2D2D;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+}
+
+
+
+.showError-feedback {
+    width: 100%;
+    color: #EB4D3D;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 4px;
+}
+
+.arrows_content {
+    display: flex;
+    gap: 4px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+}
+
+.btn_arrows {
+    width: 32px;
+    height: 32px;
+    background: #EBF8FF;
+    border: none;
+    border-radius: 4px;
+
+    &:hover, &:focus, &:active {
+        background: #BEE9FF;
+    }
+}
