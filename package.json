@@ -1,6 +1,6 @@
 {
-  "name": "HealthSpy",
-  "homepage": "https://b3252300.github.io/HealthSpy",
+  "name": "healthspy",
+  "homepage": "https://b3252300.github.io/healthspy",
   "version": "0.0.0",
   "private": true,
   "type": "module",
