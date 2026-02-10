@@ -9,7 +9,6 @@
     "build": "vite build",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
-    "build:staging": "rimraf dist && cross-env vite build --mode staging",
     "report": "rimraf dist && cross-env vite build",
     "vis": "set vis=true && vite build",
     "lint-fix": "",
